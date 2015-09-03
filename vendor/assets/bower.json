@@ -1,6 +1,7 @@
 {
   "name": "dsl-generated dependencies",
   "dependencies": {
-    "vivus": "latest"
+    "vivus": "latest",
+    "typed.js": "latest"
   }
 }
