@@ -1,12 +1,17 @@
 - places:
   - name: "the Bronx"
+    special_place: "the loanshark"
   - name: "Manhattan"
+    special_place: "the bank"
   - name: "Central Park"
+    special_place: "the hospital"
   - name: "Coney Island"
   - name: "Staten Island"
   - name: "Queens"
   - name: "Brooklyn"
+    special_place: "Dan's House of Guns"
   - name: "the Ghetto"
+    special_place: "the pub"
 
 - drugs:
   - name: "Hashish"
