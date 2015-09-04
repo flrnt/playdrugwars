@@ -51,8 +51,17 @@
 <part>id</part>
 </key>
 </table>
-<table x="652" y="85" name="users">
+<table x="625" y="84" name="users">
 <row name="id" null="1" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="health" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="cash" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
@@ -79,11 +88,36 @@
 <part>id</part>
 </key>
 </table>
-<table x="600" y="319" name="drugs">
+<table x="493" y="402" name="drugs">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="price" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="quantity" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="796" y="102" name="bitches">
+<row name="id" null="1" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<key type="PRIMARY" name="">
+<part>id</part>
+</key>
+</table>
+<table x="736" y="381" name="bags">
+<row name="id" null="1" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="space" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">

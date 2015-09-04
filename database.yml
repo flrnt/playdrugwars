@@ -1,4 +1,25 @@
+- places:
+  - name: "the Bronx"
+  - name: "Manhattan"
+  - name: "Central Park"
+  - name: "Coney Island"
+  - name: "Staten Island"
+  - name: "Queens"
+  - name: "Brooklyn"
+  - name: "the Ghetto"
+
 - drugs:
+  - name: "Hashish"
+  - name: "Heroin"
+  - name: "Ludes"
+  - name: "Opium"
+  - name: "PCP"
+  - name: "Peyote"
+  - name: "Shrooms"
+  - name: "Speed"
+  - name: "Weed"
+  - name: "Acid"
+  - name: "Ecstasy"
 
 - weapons:
   - type: "Fist"
