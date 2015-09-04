@@ -51,7 +51,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="625" y="84" name="users">
+<table x="633" y="138" name="users">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -62,6 +62,12 @@
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="cash" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="score" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="best_score" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <key type="PRIMARY" name="">
