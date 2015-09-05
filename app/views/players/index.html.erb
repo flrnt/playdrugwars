@@ -1,0 +1,7 @@
+<%= @players %>
+
+<ul class="list-unstyled">
+  <% @drugs.each do |drug| %>
+    <li><%= drug.name %> is selling for $<%= drug.price %></li>
+  <% end %>
+</ul>

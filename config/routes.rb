@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :players
+
   root to: "static_pages#home"
 
   get 'static_pages/home', to: "static_pages#home"
