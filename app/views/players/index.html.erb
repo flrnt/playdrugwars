@@ -1,5 +1,6 @@
-<%= @players %>
+<%= link_to "Bobby", player_path(1) %>
 
+<%#= link_to "See your profile", player_path(current_player) %>
 <ul class="list-unstyled">
   <% @drugs.each do |drug| %>
     <li><%= drug.name %> is selling for $<%= drug.price %></li>
