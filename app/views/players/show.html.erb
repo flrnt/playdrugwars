@@ -15,6 +15,12 @@
           <li><%= drug.name %> @ $<%= drug.price %></li>
         <% end %>
       </ul>
+      <% if false %>
+      <% simple_form_for @drugs  do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit %>
+      <% end %>
+      <% end %>
     </div>
 
     <div class="col-md-4">
@@ -34,7 +40,4 @@
 
 
 
-<%# simple_form_for [@player, @drugs]  do |f| %>
-  <%#= f.input :quantity %>
-  <%#= f.button :submit %>
-<%# end %>
+
