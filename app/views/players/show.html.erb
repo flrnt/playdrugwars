@@ -1,0 +1,43 @@
+<div class="container text-center">
+  <h1>Hey <%= @player.name %></h1>
+  <div class="row">
+
+    <div class="col-md-4">
+      <h3>Your bag has <strong><%= @bag.space %></strong> slots right now.</h3>
+      <hr>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Here's what drugs are selling for:</h3>
+      <hr>
+      <ul class="list-unstyled">
+        <% @drugs.each do |drug| %>
+          <li><%= drug.name %> @ $<%= drug.price %></li>
+        <% end %>
+      </ul>
+      <% if false %>
+      <% simple_form_for @drugs  do |f| %>
+        <%= f.input :name %>
+        <%= f.button :submit %>
+      <% end %>
+      <% end %>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Here are your stats:</h3>
+      <hr>
+      <ul class="list-unstyled">
+          <li>Health: <%= @player.health %></li>
+          <li>Cash: <%= @player.cash %></li>
+          <li>Strength: <%= @player.strength %></li>
+          <!-- <li>Debt: <%#= @loanshark.money_owned %></li> -->
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
