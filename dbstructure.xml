@@ -74,7 +74,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="331" y="681" name="weapons">
+<table x="331" y="654" name="weapons">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -93,6 +93,10 @@
 <row name="player_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="players" row="id" />
+</row>
+<row name="enemy_id" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="enemies" row="id" />
 </row>
 <key type="PRIMARY" name="">
 <part>id</part>
@@ -123,7 +127,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="331" y="577" name="bitches">
+<table x="347" y="529" name="bitches">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -190,7 +194,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="474" y="703" name="enemies">
+<table x="542" y="672" name="enemies">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -205,8 +209,7 @@
 <default>NULL</default></row>
 <row name="weapon_id" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
-<default>NULL</default><relation table="weapons" row="id" />
-</row>
+<default>NULL</default></row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
