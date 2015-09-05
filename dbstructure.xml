@@ -37,7 +37,7 @@
     <type label="SET" length="1" sql="SET" quote=""/>
     <type label="Bit" length="0" sql="bit" quote=""/>
   </group>
-</datatypes><table x="520" y="247" name="cities">
+</datatypes><table x="497" y="383" name="cities">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -48,7 +48,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="43" y="364" name="players">
+<table x="78" y="487" name="players">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -74,7 +74,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="314" y="566" name="weapons">
+<table x="331" y="681" name="weapons">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -98,14 +98,17 @@
 <part>id</part>
 </key>
 </table>
-<table x="387" y="155" name="drugs">
+<table x="354" y="291" name="drugs">
 <row name="id" null="1" autoincrement="1">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="name" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="price" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
-<row name="name" null="1" autoincrement="0">
+<row name="quantity" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="bag_id" null="1" autoincrement="0">
@@ -120,7 +123,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="263" y="441" name="bitches">
+<table x="331" y="577" name="bitches">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -135,7 +138,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="250" y="224" name="bags">
+<table x="225" y="360" name="bags">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -150,7 +153,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="731" y="293" name="bank_accounts">
+<table x="662" y="417" name="bank_accounts">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -161,11 +164,15 @@
 <datatype>TINYINT</datatype>
 <default>NULL</default><relation table="cities" row="id" />
 </row>
+<row name="player_id" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default><relation table="players" row="id" />
+</row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="744" y="120" name="loansharks">
+<table x="694" y="151" name="loansharks">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -183,7 +190,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="462" y="474" name="enemies">
+<table x="474" y="703" name="enemies">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
@@ -204,11 +211,14 @@
 <part>id</part>
 </key>
 </table>
-<table x="738" y="407" name="gym">
+<table x="693" y="272" name="gym">
 <row name="id" null="1" autoincrement="1">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="name" null="1" autoincrement="0">
+<datatype>TINYINT</datatype>
+<default>NULL</default></row>
+<row name="curative_power" null="1" autoincrement="0">
 <datatype>TINYINT</datatype>
 <default>NULL</default></row>
 <row name="city_id" null="1" autoincrement="0">
