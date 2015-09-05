@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Casio';
+  src: url(/assets/casio-6f1b51776439840d0b33dd0a9001acd66a57eae2fa9b41e48acf053d3305dc04.eot);
+  src: url(/assets/casio-6f1b51776439840d0b33dd0a9001acd66a57eae2fa9b41e48acf053d3305dc04.eot?#iefix) format("embedded-opentype"), url(/assets/casio-83d906f7beecc1fb040989f312fee8a583332fffdac747da37da05ffa9c97c22.svg#casio) format("svg"), url(/assets/casio-6a2dc2a587c8b66177f4c44e10497188eefba74fc2a4783b646fcb3b6f00c3fe.woff) format("woff"), url(/assets/casio-9d0ea9969b450c628cf643dc6cb3bd110ebba5503c1b0e7a1533d25ac5934325.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Ti';
+  src: url(/assets/ti-bf52bdff22e5d1221ffabece5a6211cd3b1838d2fe53b7d6c7bcbe4a9a43a804.eot);
+  src: url(/assets/ti-bf52bdff22e5d1221ffabece5a6211cd3b1838d2fe53b7d6c7bcbe4a9a43a804.eot?#iefix) format("embedded-opentype"), url(/assets/ti-c15dffd34b6f0f61190f5d4f04fb5174e3af4ccd743f5639f081bdbcede655f4.svg#ti) format("svg"), url(/assets/ti-8e8849955e0259f43457ff096c20350321595e35156efe3926f556d171a361eb.woff) format("woff"), url(/assets/ti-7e301633110f8d1178ef1b2343ab28b92c424f516f35ba42125ca0dff7ef69eb.ttf) format("truetype");
+}
+/* line 1, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/my_styles.scss */
+body {
+  font-family: "Ti";
+}
+/* line 5, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/players.scss */
+.font-casio {
+  font-family: "Casio";
+}
+
+/* line 9, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/players.scss */
+.font-ti {
+  font-family: "ti";
+}
+
+/* line 13, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/players.scss */
+html, body {
+  font-family: "Ti";
+}
+/* line 8, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/static_pages.scss */
+.font-war {
+  font-family: 'VT323', !important;
+}
+
+/* line 12, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/static_pages.scss */
+.big-font {
+  font-size: 40px, !important;
+}
+
+/* line 16, /Users/pauletiennecoisne/Sites/playdrugwars/app/assets/stylesheets/static_pages.scss */
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 2s infinite;
+  -moz-animation: blink 2s infinite;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */

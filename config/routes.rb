@@ -3,8 +3,10 @@ Rails.application.routes.draw do
   resources :players do
     resources :bags
   end
+
   resources :bags
   resources :drugs
+  resources :players
 
   root to: "static_pages#home"
 
