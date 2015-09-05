@@ -7,6 +7,7 @@ class PlayersController < ApplicationController
   def show
     @player = Player.find(params[:id])
     @drugs = Drug.all
+    @bag = Bag.where(player_id: @player.id).first
   end
 
   def new

@@ -1,3 +1,3 @@
 class City < ActiveRecord::Base
-  belongs_to :drug
+  has_many :drugs
 end

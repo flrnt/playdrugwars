@@ -1,8 +1,34 @@
-<h1>Hey <%= @player.name %></h1>
-<h4>Here's what drugs are selling for:</h4>
+<div class="container text-center">
+  <h1>Hey <%= @player.name %></h1>
+  <div class="row">
 
-<ul class="list-unstyled">
-  <% @drugs.each do |drug| %>
-    <li><%= drug.name %> is selling for $<%= drug.price %></li>
-  <% end %>
-</ul>
+    <div class="col-md-4">
+      <h3>Your bag has <%= @bag.space %> slots right now.</h3>
+      <hr>
+    </div>
+
+    <div class="col-md-4">
+      <h3>Here's what drugs are selling for:</h3>
+      <hr>
+      <ul class="list-unstyled">
+        <% @drugs.each do |drug| %>
+          <li><%= drug.name %> @ $<%= drug.price %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="col-md-4">
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<%# simple_form_for [@player, @drugs]  do |f| %>
+  <%#= f.input :quantity %>
+  <%#= f.button :submit %>
+<%# end %>
