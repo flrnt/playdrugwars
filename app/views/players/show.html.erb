@@ -3,7 +3,9 @@
   <div class="row">
 
     <div class="col-md-4">
+    <% if false %>
       <h3>Your bag has <strong><%= @bag.space %></strong> slots right now.</h3>
+    <% end %>
       <hr>
     </div>
 
@@ -16,7 +18,7 @@
         <% end %>
       </ul>
       <% if false %>
-      <% simple_form_for @drugs  do |f| %>
+      <%= simple_form_for @drugs  do |f| %>
         <%= f.input :name %>
         <%= f.button :submit %>
       <% end %>
@@ -27,9 +29,22 @@
       <h3>Here are your stats:</h3>
       <hr>
       <ul class="list-unstyled">
+        <% if @player.health == nil %>
+          <li>Looks like you died!</li>
+        <% else %>
           <li>Health: <%= @player.health %></li>
+        <% end %>
+        <% if @player.health == nil %>
+          <li>Looks like you're broke!</li>
+        <% else %>
           <li>Cash: <%= @player.cash %></li>
+        <% end %>
+
+        <% if @player.health == nil %>
+          <li>Looks like you're really weak!</li>
+        <% else %>
           <li>Strength: <%= @player.strength %></li>
+        <% end %>
           <!-- <li>Debt: <%#= @loanshark.money_owned %></li> -->
       </ul>
     </div>
