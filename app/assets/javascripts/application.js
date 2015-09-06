@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+// require turbolinks
 //= require_tree .
 //= require typed.js/js/typed.js
 //= require vivus/dist/vivus.min.js
