@@ -1,2 +1,4 @@
-<h1>Players#edit</h1>
-<p>Find me in app/views/players/edit.html.erb</p>
+<%= simple_form_for @player do |f| %>
+  <%= f.input :name %>
+  <%= f.button :submit %>
+<% end %>
