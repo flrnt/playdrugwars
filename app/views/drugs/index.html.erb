@@ -1,6 +1,11 @@
-      <h3>Here's what drugs are selling for:</h3>
-      <hr>
-      <ul class="list-unstyled">
-        <% @drugs.each do |drug| %>
-          <li><%= drug.name %> @ $<%= drug.price %></li>
-        <% end %>
+<div class="container">
+  <div class="row text-center">
+    <h3>Here's what drugs are selling for:</h3>
+    <hr>
+    <ul class="list-unstyled">
+      <% @drugs.each do |drug| %>
+        <li><%= drug.name %> @ $<%= drug.price %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
