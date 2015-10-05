@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .flexbox {
+  display: flex;
 }
 
 .font-war {
@@ -19,6 +21,8 @@
   -moz-animation: blink 2s infinite;
   animation: blink 2s infinite;
 }
+
+
 @keyframes blink{
   0% { opacity:1; }
   50% { opacity:0; }

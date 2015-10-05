@@ -1,0 +1,24 @@
+.dashboard {
+  border: solid 1px grey;
+  display: flex;
+  h3 {
+    width: 100%;
+    border-bottom: solid 1px grey;
+  }
+}
+
+#stats {
+  text-align: center;
+  width: 50%;
+  flex-flow: column;
+}
+
+#drugs {
+  text-align: center;
+  width: 50%;
+}
+
+#game {
+  text-align: center;
+  width: 100%;
+}
